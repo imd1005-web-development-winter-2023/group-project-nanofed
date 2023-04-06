@@ -8,7 +8,7 @@
 //
 
 // Constants
-const appID = "app";
+/*const appID = "app";
 const headingText = "Develop. Preview. Ship.";
 const headingTextIcon = "🚀";
 const projectDueDate = "11 April 2023 11:59";
@@ -23,7 +23,7 @@ let appContainer = document.getElementById(appID);
 // Functions
 //
 
-function calculateDaysLeft(countdownDate) {
+/*function calculateDaysLeft(countdownDate) {
   const now = new Date().getTime();
   const countdown = new Date(countdownDate).getTime();
 
@@ -70,4 +70,4 @@ function inititialise() {
 // Inits & Event Listeners
 //
 
-inititialise();
+inititialise();*/

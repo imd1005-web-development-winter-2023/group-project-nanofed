@@ -8,11 +8,7 @@
 :root {
   /* Core colours */
   /* https://coolors.co/palette/e63946-f1faee-a8dadc-457b9d-1d3557 */
-  --colour-amaranth: #e63946;
-  --colour-peppermint: #f1faee;
-  --colour-aquaisland: #a8dadc;
-  --colour-wedgewood: #457b9d;
-  --colour-cello: #1d3557;
+
 
   /* Header configuration */
   --header-heading-colour: var(--colour-peppermint);
@@ -27,16 +23,55 @@
 */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: var(--body-default-colour);
-  background-color: var(--body-background-colour);
 }
 
 main {
-  min-height: 100vh;
-
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("images/favicon/account-bg.jpg");
+  background-repeat: no-repeat;
+  border: 1px solid red;
+  background-size: cover;
+
+}
+
+.form {
+  max-width: 600px;
+  width: 100%;
+  padding: 50px;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 1px 1px 5px #888888;
+}
+
+form .field {
+  height: 45px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.field input,
+.field button {
+  height: 100%;
+  width: 100%;
+  border-color: #F2F2F2
+}
+
+.field input {
+  padding: 15px;
+  background-color: #F2F2F2;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 1px 1px 5px #888888;
 }
 
 /*

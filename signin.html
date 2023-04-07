@@ -22,47 +22,74 @@
 </head>
 
 <body>
+
+
+
   <!-- Sign Up Page -->
   <section class="container forms">
+    <nav class="navigation">
+      <h1 class="nav-bar">TheHungryBox</h1>
+      <div class="nav-links">
+        <a href="#">Recipes</a>
+        <a href="#">Kitchen Tips</a>
+        <a href="#">Community</a>
+        <a href="#">About us</a>
+        <a href="#">Contact us</a>
+      </div>
+
+    </nav>
+
+
+
+
+
     <div class="form signIn">
 
-      <div class="sign-up-form">
-        <h1 class="sign-up-title">Welcome to TheHungryBox</h1>
-        <h3 class="sign-up-subtitle">Sign In to submit reviews and your own recipes!</h3>
+      <div class="sign-in-form">
+        <h1 class="sign-in-title">Welcome to TheHungryBox</h1>
+        <h3 class="sign-in-subtitle">Sign In to submit reviews and your own recipes!</h3>
         <form>
 
           <div class="field input-SignIn">
-            <input type="email" class="sign-up-email" placeholder="Email">
+            <input type="email" class="sign-in-email" placeholder="Email">
           </div>
 
           <div class="field input-SignIn">
-            <input type="password" class="sign-up-password" placeholder="Password">
+            <input type="password" class="sign-in-password" placeholder="Password">
           </div>
 
-          <a href="#" class="forgot-password">Forgot password?</a>
+          <div class="form-link">
+            <a href="#" class="forgot-password">Forgot password?</a>
+          </div>
 
           <div class="field input-btn-SignIn">
             <button type="button" class="sign-in-btn">Sign in</button>
           </div>
 
-          <p class="no-account">Don't have an account? <a href="./signup.html">Sign Up</a></p>
-          <p class="guest">Or continue as <a href="#">guest</a></p>
+          <div class="line"></div>
+
+          <div class="media">
+            <a href="#" class="google">
+              <img src="images/favicon/google-icon.png" alt="google icon" width="18" class="google-icon">
+              <span>Sign in with Google</span>
+            </a>
+
+            <a href="#" class="facebook">
+              <img src="images/favicon/facebook-icon.png" alt="facebook icon" width="18" class="facebook-icon">
+              <span>Sign in with Facebook</span>
+            </a>
+          </div>
+
+          <div class="form-link">
+            <p class="no-account">Don't have an account? <a href="./signup.html">Sign Up</a></p>
+            <p class="guest">Or continue as <a href="#">guest</a></p>
+          </div>
+
         </form>
       </div>
-
-
     </div>
-
-
-
   </section>
-  <!--
 
-      ADD YOUR GROUP PROJECT CODE
-
-      YOU MAY REMOVE THE BOILERPLATE CODE BELOW
-
-    -->
   <main>
     <div id="app"></div>
   </main>

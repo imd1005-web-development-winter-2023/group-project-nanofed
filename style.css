@@ -35,22 +35,59 @@ main {
   height: 100vh;
   width: 100%;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
   background-image: url("images/favicon/account-bg.jpg");
   background-repeat: no-repeat;
-  border: 1px solid red;
   background-size: cover;
+}
 
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 30px 5px 30px;
+  flex-direction: row;
+  color: #FFF;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+
+}
+
+.navigation a {
+  color: #FFF;
+  text-decoration: none;
+  gap: 30px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
 }
 
 .form {
   max-width: 600px;
+  max-height: 650px;
   width: 100%;
-  padding: 50px;
+  padding: 45px;
   border-radius: 15px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
   background: white;
   box-shadow: 1px 1px 5px #888888;
+}
+
+.sign-in-title {
+  color: #707070;
+}
+
+.sign-in-subtitle {
+  color: #A0A0A0;
 }
 
 form .field {
@@ -67,11 +104,85 @@ form .field {
 }
 
 .field input {
-  padding: 15px;
+  padding: 25px;
   background-color: #F2F2F2;
   border-radius: 15px;
   border: none;
   box-shadow: 1px 1px 5px #888888;
+}
+
+.line {
+  position: relative;
+  height: 1px;
+  width: 100%;
+  margin: 36px 0;
+  background-color: #d4d4d4
+}
+
+.line::before {
+  content: 'OR';
+  position: absolute;
+  right: 44%;
+  transform: translate(5%, -58%);
+  background-color: #FFF;
+  padding: 0 15px;
+}
+
+.google {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transform: translate(28%, -30%);
+  justify-content: center;
+  border-radius: 15px;
+  border-width: 1px;
+  box-shadow: 0.5px 0.5px 4px #888888;
+  width: 280px;
+  height: 50px;
+  gap: 10px;
+}
+
+.facebook {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transform: translate(28%, -30%);
+  justify-content: center;
+  border-radius: 15px;
+  border-width: 1px;
+  box-shadow: 0.5px 0.5px 4px #888888;
+  width: 280px;
+  height: 50px;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+
+.form-link {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.form a {
+  text-decoration: none;
+}
+
+.form a:hover {
+  text-decoration: underline;
+}
+
+.no-account {
+  font-size: 20px;
+  font-weight: bold;
+  color: #707070;
+}
+
+.no-account a {
+  color: #516949;
+}
+
+.guest {
+  color: #A0A0A0;
 }
 
 /*
@@ -87,4 +198,24 @@ form .field {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+
+
+/*
+Sign Up Page
+*/
+
+.sign-up-title {
+  color: #707070;
+}
+
+.sign-up-subtitle {
+  color: #A0A0A0;
+}
+
+.input-name {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
 }

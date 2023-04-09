@@ -201,10 +201,15 @@ form .field {
   gap: 10px;
 }
 
-
 .form-link {
   text-align: center;
   margin-top: 10px;
+}
+
+.forgot-password {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: -15px;
 }
 
 .form a {
@@ -233,7 +238,7 @@ form .field {
 /*
   Screen reader text utility class
 */
-/*.sr-only {
+.sr-only {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -243,7 +248,7 @@ form .field {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
-}*/
+}
 
 
 /*

@@ -45,8 +45,8 @@ main {
 .navigation {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin: 0 30px 5px 30px;
+  align-items: flex-end;
+  margin: -100px 25px 100px 25px;
   flex-direction: row;
   color: #FFF;
 }
@@ -55,7 +55,6 @@ main {
   display: flex;
   justify-content: space-between;
   font-size: 30px;
-
 }
 
 .navigation a {
@@ -100,7 +99,6 @@ form .field {
   margin-top: 35px;
 }
 
-
 .field button {
   height: 100%;
   width: 100%;
@@ -108,7 +106,6 @@ form .field {
   border-color: #F2F2F2;
   box-shadow: 1px 1px 5px #888888;
 }
-
 
 .field button:hover {
   background-color: #516949;

@@ -1,73 +1,63 @@
-//
-//  JS File
-//  You may remove the code below - it's just boilerplate
-//
+const form = document.getElementById("form");
+const email = document.getElementById('email');
+const password = document.getElementById('password');
 
-//
-// Variables
-//
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
 
-// Constants
-/*const appID = "app";
-const headingText = "Develop. Preview. Ship.";
-const headingTextIcon = "🚀";
-const projectDueDate = "11 April 2023 11:59";
+  Validate();
+});
 
-// Variables
-let countdownDate = new Date(projectDueDate);
+const setError = (element, message) => {
+  const inputControl = element.parentElement;
+  const errorDisplay = inputControl.querySelector('.error');
 
-// DOM Elements
-let appContainer = document.getElementById(appID);
+  errorDisplay.innerText = message;
+  inputControl.classList.add('error');
+  inputControl.classList.remove('success');
+};
 
-//
-// Functions
-//
+const setSucess = element => {
+  const inputControl = element.parentElement;
+  const errorDisplay = inputControl.querySelector('.error');
 
-/*function calculateDaysLeft(countdownDate) {
-  const now = new Date().getTime();
-  const countdown = new Date(countdownDate).getTime();
+  errorDisplay.innerText = '';
+  inputControl.classList.add('success');
+  inputControl.classList.remove('error');
+};
 
-  const difference = (countdown - now) / 1000;
+const isValidEmail = (emailVal) => {
+  var atSymbol = emailVal.indexOf('@');
+  if (atSymbol < 1) return false;
+  var dot = emailVal.lastIndexOf('.');
+  if (dot <= atSymbol + 2) return false;
+  if (dot === emailVal.length - 1) return false;
+  return true;
+};
 
-  // Countdown passed already
-  if (difference < 1) {
-    return null;
+const Validate = () => {
+  const emailVal = email.value.trim();
+  const passwordVal = password.value.trim();
+
+  //Email
+  if (emailVal === '') {
+    setError(email, 'Email is required');
+  }
+  else if (!isValidEmail(emailVal)) {
+    setError(email, 'Email is not valid');
+  }
+  else {
+    setSuccess(email);
   }
 
-  const days = Math.floor(difference / (60 * 60 * 24));
-
-  return days;
-}
-
-// Add a heading to the app container
-function inititialise() {
-  // If anything is wrong with the app container then end
-  if (!appContainer) {
-    console.error("Error: Could not find app contianer");
-    return;
+  //Password
+  if (passwordVal === '') {
+    setError(password, 'Password is required');
   }
-
-  // Create an h1 and add it to our app
-  const h1 = document.createElement("h1");
-  const daysLeft = calculateDaysLeft(countdownDate);
-  let headingTextCalculated = headingText;
-
-  if (daysLeft) {
-    headingTextCalculated = headingTextCalculated.concat(
-      " In ",
-      daysLeft.toString(),
-      " days "
-    );
+  else if (passwordVal.length <= 7) {
+    setError(password, "Password must be 8 or + characters");
   }
-  h1.textContent = headingTextCalculated.concat(headingTextIcon);
-  appContainer.appendChild(h1);
-
-  // Init complete
-  console.log("App successfully initialised");
-}
-
-//
-// Inits & Event Listeners
-//
-
-inititialise();*/
+  else {
+    setSuccess(password);
+  }
+};

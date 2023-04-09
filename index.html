@@ -24,81 +24,31 @@
 
 <body>
 
-  <!-- Sign Up Page -->
-
+  <!--Header section-->
   <section class="container forms">
     <nav class="navigation">
-      <h1 class="nav-bar">TheHungryBox</h1>
+      <h1 class="nav-bar">HungryBox</h1>
       <div class="nav-links">
         <a href="#">Recipes</a>
         <a href="#">Kitchen Tips</a>
         <a href="#">Community</a>
         <a href="#">About us</a>
         <a href="#">Contact us</a>
+        <!--Sign in button that leads to another page-->
+        <a href="signin.html" id="sign-in">Sign in</a>
       </div>
-
     </nav>
-
-    <div class="form signIn">
-
-      <div class="sign-in-form">
-        <h1 class="sign-in-title">Welcome to TheHungryBox</h1>
-        <h3 class="sign-in-subtitle">Sign In to submit reviews and your own recipes!</h3>
-        <form id="form" action="./signup.html">
-
-          <div class="field input">
-            <input type="email" id="email" class="sign-in-email" placeholder="Email" required autocomplete="off">
-          </div>
-
-          <div class="error"></div>
-
-          <div class="field input">
-            <input type="password" id="password" class="sign-in-password" placeholder="Password" required
-              autocomplete="">
-          </div>
-
-          <div class="error"></div>
-
-          <div class="form-link">
-            <a href="#" class="forgot-password">Forgot password?</a>
-          </div>
-
-          <div class="field input-btn-SignIn">
-            <button type="submit" class="sign-in-btn">Sign in</button>
-          </div>
-        </form>
-
-
-        <div class="line"></div>
-
-        <div class="media">
-          <a href="#" class="google">
-            <img src="images/favicon/google-icon.png" alt="google icon" width="18" class="google-icon">
-            <span>Sign in with Google</span>
-          </a>
-
-          <a href="#" class="facebook">
-            <img src="images/favicon/facebook-icon.png" alt="facebook icon" width="18" class="facebook-icon">
-            <span>Sign in with Facebook</span>
-          </a>
-        </div>
-
-        <div class="form-link">
-          <p class="no-account">Don't have an account? <a href="./signup.html">Sign Up</a></p>
-          <p class="guest">Or continue as <a href="#">guest</a></p>
-        </div>
-
-
-      </div>
-    </div>
   </section>
 
-  <main>
-    <div id="app"></div>
-  </main>
+    <h1 id="intro-title">HungryBox</h1>
+    <a href="#" id="intro-background"> 
+        <img src="front-images/header.jpg" alt="picture of ingredients">
+    </a>
+    <!--Search button-->
+    <form id="search">
+      <input id="searching">
+    </form>
 
-  <!-- This is where we add our awesome JavaScript code -->
-  <script src="./main.js"></script>
 </body>
 
-</html>
+<html>

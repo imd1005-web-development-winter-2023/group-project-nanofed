@@ -19,11 +19,12 @@
 
   <!-- Set the Favicon  -->
   <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
+
+  <script type="text/JavaScript"></script>
+
 </head>
 
 <body>
-
-
 
   <!-- Sign Up Page -->
   <section class="container forms">
@@ -39,53 +40,56 @@
 
     </nav>
 
-
-
-
-
     <div class="form signIn">
 
       <div class="sign-in-form">
         <h1 class="sign-in-title">Welcome to TheHungryBox</h1>
         <h3 class="sign-in-subtitle">Sign In to submit reviews and your own recipes!</h3>
-        <form>
+        <form id="form" action="./signup.html">
 
-          <div class="field input-SignIn">
-            <input type="email" class="sign-in-email" placeholder="Email">
+          <div class="field input">
+            <input type="email" id="email" class="sign-in-email" placeholder="Email" required autocomplete="off">
           </div>
 
-          <div class="field input-SignIn">
-            <input type="password" class="sign-in-password" placeholder="Password">
+          <div class="error"></div>
+
+          <div class="field input">
+            <input type="password" id="password" class="sign-in-password" placeholder="Password" required
+              autocomplete="">
           </div>
+
+          <div class="error"></div>
 
           <div class="form-link">
             <a href="#" class="forgot-password">Forgot password?</a>
           </div>
 
           <div class="field input-btn-SignIn">
-            <button type="button" class="sign-in-btn">Sign in</button>
+            <button type="submit" class="sign-in-btn">Sign in</button>
           </div>
-
-          <div class="line"></div>
-
-          <div class="media">
-            <a href="#" class="google">
-              <img src="images/favicon/google-icon.png" alt="google icon" width="18" class="google-icon">
-              <span>Sign in with Google</span>
-            </a>
-
-            <a href="#" class="facebook">
-              <img src="images/favicon/facebook-icon.png" alt="facebook icon" width="18" class="facebook-icon">
-              <span>Sign in with Facebook</span>
-            </a>
-          </div>
-
-          <div class="form-link">
-            <p class="no-account">Don't have an account? <a href="./signup.html">Sign Up</a></p>
-            <p class="guest">Or continue as <a href="#">guest</a></p>
-          </div>
-
         </form>
+
+
+        <div class="line"></div>
+
+        <div class="media">
+          <a href="#" class="google">
+            <img src="images/favicon/google-icon.png" alt="google icon" width="18" class="google-icon">
+            <span>Sign in with Google</span>
+          </a>
+
+          <a href="#" class="facebook">
+            <img src="images/favicon/facebook-icon.png" alt="facebook icon" width="18" class="facebook-icon">
+            <span>Sign in with Facebook</span>
+          </a>
+        </div>
+
+        <div class="form-link">
+          <p class="no-account">Don't have an account? <a href="./signup.html">Sign Up</a></p>
+          <p class="guest">Or continue as <a href="#">guest</a></p>
+        </div>
+
+
       </div>
     </div>
   </section>
@@ -95,7 +99,7 @@
   </main>
 
   <!-- This is where we add our awesome JavaScript code -->
-  <script src="./main.js"></script>
+  <script defer src="./main.js"></script>
 </body>
 
 </html>

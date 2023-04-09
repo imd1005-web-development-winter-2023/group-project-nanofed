@@ -64,6 +64,10 @@ main {
   gap: 30px;
 }
 
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
 .nav-links {
   display: flex;
   gap: 30px;
@@ -93,22 +97,50 @@ main {
 form .field {
   height: 45px;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 35px;
 }
 
-.field input,
+
 .field button {
   height: 100%;
   width: 100%;
-  border-color: #F2F2F2
+  border: none;
+  border-color: #F2F2F2;
+  box-shadow: 1px 1px 5px #888888;
+}
+
+
+.field button:hover {
+  background-color: #516949;
+  color: white;
+  box-shadow: 1px 1px 5px #888888;
+}
+
+.field button:active {
+  background-color: #33462D;
+  color: white;
 }
 
 .field input {
+  height: 100%;
+  width: 100%;
   padding: 25px;
   background-color: #F2F2F2;
   border-radius: 15px;
-  border: none;
   box-shadow: 1px 1px 5px #888888;
+  position: relative;
+}
+
+.field input.success input {
+  border-color: #39df7e;
+}
+
+.field input.error input {
+  border-color: #df3434;
+}
+
+.field input .error {
+  border-color: #df3434;
 }
 
 .line {
@@ -160,7 +192,7 @@ form .field {
 
 .form-link {
   text-align: center;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .form a {
@@ -185,10 +217,11 @@ form .field {
   color: #A0A0A0;
 }
 
+
 /*
   Screen reader text utility class
 */
-.sr-only {
+/*.sr-only {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -198,7 +231,7 @@ form .field {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
-}
+}*/
 
 
 /*
@@ -218,4 +251,33 @@ Sign Up Page
   flex-direction: row;
   gap: 10px;
 
+}
+
+.google-signup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transform: translate(40%, -30%);
+  justify-content: center;
+  border-radius: 15px;
+  border-width: 1px;
+  box-shadow: 0.5px 0.5px 4px #888888;
+  width: 280px;
+  height: 50px;
+  gap: 10px;
+}
+
+.facebook-signup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transform: translate(40%, -35%);
+  justify-content: center;
+  border-radius: 15px;
+  border-width: 1px;
+  box-shadow: 0.5px 0.5px 4px #888888;
+  width: 280px;
+  height: 50px;
+  margin-top: 10px;
+  gap: 10px;
 }

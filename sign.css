@@ -24,15 +24,15 @@ main {
 .navigation {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  margin: -100px 25px 100px 25px;
+  align-items: center;
+  align-content: center;
+  margin: 30px 25px 25px 25px;
   flex-direction: row;
   color: #FFF;
 }
 
 .nav-bar {
   display: flex;
-  justify-content: space-between;
   font-size: 30px;
 }
 
@@ -55,7 +55,7 @@ main {
   max-width: 600px;
   max-height: 650px;
   width: 100%;
-  padding: 45px;
+  padding: 30px;
   border-radius: 15px;
   display: flex;
   align-self: center;
@@ -103,20 +103,21 @@ form .field {
   padding: 25px;
   background-color: #F2F2F2;
   border-radius: 15px;
+  border: none;
   box-shadow: 1px 1px 5px #888888;
   position: relative;
 }
 
 .field input.success input {
-  border-color: #39df7e;
+  border-color: green;
 }
 
 .field input.error input {
-  border-color: #df3434;
+  border-color: red;
 }
 
 .field input .error {
-  border-color: #df3434;
+  border-color: red;
 }
 
 .line {
@@ -173,7 +174,7 @@ form .field {
 .forgot-password {
   text-align: center;
   margin-top: 30px;
-  margin-bottom: -15px;
+  margin-bottom: -10px;
 }
 
 .form a {

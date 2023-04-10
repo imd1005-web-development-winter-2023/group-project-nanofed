@@ -1,26 +1,26 @@
 const form = document.querySelector('form');
-const email = document.querySelector('email');
-const password = document.querySelector('password');
+const email = document.querySelector('.sign-in-email');
+const password = document.querySelector('.sign-in-password');
 
-form.addEventListener('submit', (Event) => {
+form.addEventListener('submit', (event) => {
 
-    Event.preventDefault();
+    event.preventDefault();
 
     validate();
 });
 
-const showError = (Element, message) => {
+const showError = (element, message) => {
     const inputControl = element.parentElement;
-    const errorDisplay = inputControl.querySelector('error');
+    const errorDisplay = inputControl.querySelector('.error');
 
     errorDisplay.innerText = message;
     inputControl.classList.add('error');
     inputControl.classList.remove('success');
 };
 
-const showSuccess = (Element) => {
+const showSuccess = (element) => {
     const inputControl = element.parentElement;
-    const errorDisplay = inputControl.querySelector('error');
+    const errorDisplay = inputControl.querySelector('.error');
 
     errorDisplay.innerText = '';
     inputControl.classList.add('success');
@@ -35,7 +35,7 @@ const checkEmail = (emailVal) => {
     if (dot <= atSymbol + 2) return false;
     if (dot === emailVal.length - 1) return false;
     return true;
-}
+};
 
 const validate = () => {
     const emailVal = email.value.trim();

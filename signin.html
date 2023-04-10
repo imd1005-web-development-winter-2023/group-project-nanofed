@@ -28,7 +28,10 @@
 
   <section class="container forms">
     <nav class="navigation">
-      <h1 class="nav-bar">TheHungryBox</h1>
+      <div class="nav-bar">
+        <h1>HungryBox</h1>
+        <img class="nav-bar" src="images/favicon/Hungrybox_Logo(2).png" width="100">
+      </div>
       <div class="nav-links">
         <a href="#">Recipes</a>
         <a href="#">Kitchen Tips</a>
@@ -49,20 +52,17 @@
           <div class="field input">
             <input type="email" id="email" class="sign-in-email" placeholder="Email" required autocomplete="off">
             <div class="error"></div>
-          </div>
-
-
-
-          <div class="field input">
-            <input type="password" id="password" class="sign-in-password" placeholder="Password" required
-              autocomplete="">
             <div class="error"></div>
           </div>
 
-      
+          <div class="field input">
+            <input type="password" id="password" class="sign-in-password" placeholder="Password" required
+              autocomplete="off">
+            <div class="error"></div>
+          </div>
 
-          <div class="form-link">
-            <a href="#" class="forgot-password">Forgot password?</a>
+          <div class="forgot-password">
+            <a href="#">Forgot password?</a>
           </div>
 
           <div class="field input-btn-SignIn">
@@ -90,7 +90,6 @@
           <p class="guest">Or continue as <a href="#">guest</a></p>
         </div>
 
-
       </div>
     </div>
   </section>
@@ -100,7 +99,7 @@
   </main>
 
   <!-- This is where we add our awesome JavaScript code -->
-  <script src="./main.js"></script>
+  <script src="./signin.js"></script>
 </body>
 
 </html>

@@ -2,11 +2,19 @@ const form = document.querySelector('form');
 const email = document.querySelector('.sign-in-email');
 const password = document.querySelector('.sign-in-password');
 
-form.addEventListener('submit', (event) => {
+let isValid = false;
 
+form.addEventListener('submit', (event) => {
     event.preventDefault();
 
     validate();
+    
+if (isValid == true) {
+    location.replace("./main.html");
+}
+else if (isValid == false) {
+    return;
+}
 });
 
 const showError = (element, message) => {
@@ -43,21 +51,27 @@ const validate = () => {
 
     if (emailVal === '') {
         showError(email, 'Email is required')
+        isValid == false;
     }
     else if (!checkEmail(emailVal)) {
         showError(email, 'Email is invalid')
+        isValid == false;
     }
     else {
         showSuccess(email);
+        isValid == true;
     }
 
     if (passwordVal === '') {
         showError(password, 'Password is required')
+        isValid == false;
     }
     else if (passwordVal.length <= 7) {
         showError(password, 'Password must be min 8 characters')
+        isValid == false;
     }
     else {
         showSuccess(password)
+        isValid == true;
     }
 };

@@ -254,6 +254,6 @@
     }
 
 .underline:hover {
+  text-decoration: underline;
   cursor: pointer;
-  color: gray;
 }

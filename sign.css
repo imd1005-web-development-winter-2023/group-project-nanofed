@@ -1,0 +1,312 @@
+/*sign in and sign up page */
+
+
+/*Body*/
+.body {
+  display: block;
+}
+
+.body>* {
+  width: 100%;
+}
+
+@media screen and (min-width: 750px) {
+  .body {
+    display: flex;
+  }
+
+  .body>*+* {
+    margin-left: 2rem;
+  }
+
+}
+
+body {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  overflow: hidden;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-image: url("images/favicon/account-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Sign in page */
+.form.signIn {
+  max-width: 600px;
+  max-height: 650px;
+  width: 100%;
+  padding: 40px;
+  border-radius: 15px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  background: white;
+  box-shadow: 1px 1px 5px #888888;
+}
+
+/* Navigation Bar */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin: 10px 25px 5px 25px;
+  flex-direction: row;
+  color: #FFF;
+}
+
+.nav-bar {
+  display: flex;
+  font-size: 30px;
+}
+
+.navigation a {
+  color: #FFF;
+  text-decoration: none;
+  gap: 30px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+/*Sign In title, buttons */
+.sign-in-title {
+  color: #707070;
+}
+
+.sign-in-subtitle {
+  color: #A0A0A0;
+}
+
+form .field {
+  height: 45px;
+  width: 100%;
+  margin-top: 35px;
+}
+
+.field button {
+  height: 100%;
+  width: 100%;
+  border: none;
+  background-color: #516949;
+  color: white;
+  box-shadow: 1px 1px 5px #888888;
+}
+
+.field button:hover {
+
+  border-color: #F2F2F2;
+  box-shadow: 1px 1px 5px #888888;
+}
+
+.field button:active {
+  background-color: #33462D;
+  color: white;
+}
+
+.field input {
+  height: 100%;
+  width: 100%;
+  padding: 25px;
+  background-color: #F2F2F2;
+  border-color: white;
+  border-radius: 15px;
+  box-shadow: 1px 1px 5px #888888;
+  position: relative;
+}
+
+.field.input input:focus {
+  outline: 0;
+}
+
+.field.input.success input {
+  border-color: green;
+}
+
+.field.input.error input {
+  border-color: red;
+}
+
+.field.input .error .message {
+  border-color: red;
+}
+
+/* Or and google/facebook icon */
+.line {
+  position: relative;
+  height: 1px;
+  width: 100%;
+  margin: 36px 0;
+  background-color: #d4d4d4
+}
+
+.line::before {
+  content: 'OR';
+  position: absolute;
+  right: 44%;
+  transform: translate(5%, -58%);
+  background-color: #FFF;
+  padding: 0 15px;
+}
+
+.google {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transform: translate(28%, -30%);
+  justify-content: center;
+  border-radius: 15px;
+  border-width: 1px;
+  box-shadow: 0.5px 0.5px 4px #888888;
+  width: 280px;
+  height: 50px;
+  gap: 10px;
+}
+
+.facebook {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transform: translate(28%, -30%);
+  justify-content: center;
+  border-radius: 15px;
+  border-width: 1px;
+  box-shadow: 0.5px 0.5px 4px #888888;
+  width: 280px;
+  height: 50px;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+/* Form links */
+
+.form-link {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.forgot-password {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: -10px;
+}
+
+.form a {
+  text-decoration: none;
+}
+
+.form a:hover {
+  text-decoration: underline;
+}
+
+.no-account {
+  font-size: 20px;
+  font-weight: bold;
+  color: #707070;
+}
+
+.no-account a {
+  color: #516949;
+}
+
+.guest {
+  color: #A0A0A0;
+}
+
+
+/*
+    Screen reader text utility class
+  */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+
+/*
+  Sign Up Page
+  */
+
+.form.signUp {
+  max-width: 600px;
+  max-height: 670px;
+  width: 100%;
+  padding: 30px;
+  margin-top: 50px;
+  border-radius: 15px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  background: white;
+  box-shadow: 1px 1px 5px #888888;
+}
+
+.sign-up-title {
+  color: #707070;
+}
+
+.sign-up-subtitle {
+  color: #A0A0A0;
+}
+
+.input-name {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+}
+
+.google-signup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transform: translate(40%, -30%);
+  justify-content: center;
+  border-radius: 15px;
+  border-width: 1px;
+  box-shadow: 0.5px 0.5px 4px #888888;
+  width: 280px;
+  height: 50px;
+  gap: 10px;
+}
+
+.facebook-signup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transform: translate(40%, -35%);
+  justify-content: center;
+  border-radius: 15px;
+  border-width: 1px;
+  box-shadow: 0.5px 0.5px 4px #888888;
+  width: 280px;
+  height: 50px;
+  margin-top: 10px;
+  gap: 10px;
+}

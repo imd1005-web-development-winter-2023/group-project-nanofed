@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Set the page title -->
+  <title>HungryBox</title>
+
+  <!-- Set the charset we're using to UTF-8 -->
+  <meta charset="UTF-8" />
+
+  <!-- Set the screens default zoom / scale to 1 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- We are using a CSS Reset file to standardize browser default css -->
+  <link rel="stylesheet" href="./reset.css" />
+
+  <!-- This is where all of our awesome CSS code goes -->
+  <link rel="stylesheet" href="./recipes-style.css" />
+
+  <!-- Set the Favicon  -->
+  <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
+
+  <!-- Link to Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+  <!-- Link to Javascript code -->
+  <script type="text/javascript" src="recipes-js.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="landing">
+      <section class="header">
+        <nav class="navigation">
+          <div class="header-container>">
+            <div class="nav-bar">
+              <a href="main.html"><h1>HungryBox</h1></a>
+              <img class="nav-bar" src="images/favicon/Hungrybox_Logo(2).png" width="120">
+            </div>
+            <div class="nav-links">
+              <a href="#">Recipes</a>
+              <a href="#">Kitchen Tips</a>
+              <a href="#">Community</a>
+              <a href="#">About us</a>
+              <a href="#">Contact us</a>
+              <!--Sign in button that leads to another page-->
+              <a href="signin.html" id="sign-in">Sign in</a>
+            </div>
+          </div>
+        </nav>
+      </section>
+    </div>
+
+    <main>
+      <!-- Search Prompt -->
+        <div class="search-prompt">
+            <h1>What will you be cooking?</h1>
+            <div class="searchbar">
+            <form>
+              <input type="text" placeholder="  Search recipes">
+              <button type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Salads -->
+        <h2 class="recipe-names">Salads</h2>
+
+
+        <!-- Recommended Recipes -->
+        <div class="recommended-recipes">
+          <ul>
+
+            <li>
+              <div class="recipebox" id="recipe">
+                <img class="recipeimage" src="images/caesar-salad.jpg" width="350">
+                <h3>Caesar Salad</h3>
+                <p>190 cal</p>
+                <i class="fa fa-regular fa-heart" onclick="favorite()"></i>
+            </div>
+            </li>
+
+            <li>
+              <div class="recipebox" id="recipe">
+                <img class="recipeimage" src="images/greek-salad.jpg" width="350">
+                <h3>Greek Salad</h3>
+                <p>210 cal</p>
+                <i class="fa fa-regular fa-heart" onclick="favorite()"></i>
+            </div>
+            </li>
+
+            <li>
+              <div class="recipebox" id="recipe">
+                <img class="recipeimage" src="images/fruit-salad.jpg" width="350">
+                <h3>Fruit Salad</h3>
+                <p>125 cal</p>
+                <i class="fa fa-regular fa-heart" onclick="favorite()"></i>
+            </div>
+            </li>
+
+            <li>
+              <div class="recipebox" id="recipe">
+                <img class="recipeimage" src="images/salad.jpg" width="350">
+                <h3>Another Salad</h3>
+                <p>140 cal</p>
+                <i class="fa fa-regular fa-heart" onclick="favorite()"></i>
+            </div>
+            </li>
+
+          </ul>
+
+        <!-- Pasta -->
+        <h2 class="recipe-names">Pasta</h2>
+
+          <ul>
+
+            <li>
+              <div class="recipebox" id="recipe">
+                <img class="recipeimage" src="images/lasagna.jpg" width="350">
+                <h3>Lasagna</h3>
+                <p>130 cal</p>
+                <i class="fa fa-regular fa-heart" onclick="favorite()"></i>
+            </div>
+            </li>
+
+            <li>
+              <div class="recipebox" id="recipe">
+                <img class="recipeimage" src="images/pasta-two.jpg" width="350">
+                <h3>Linguini</h3>
+                <p>140 cal</p>
+                <i class="fa fa-regular fa-heart" onclick="favorite()"></i>
+            </div>
+            </li>
+
+            <li>
+              <div class="recipebox" id="recipe">
+                <img class="recipeimage" src="images/pasta-three.jpg" width="350">
+                <h3>Rotini</h3>
+                <p>160 cal</p>
+                <i class="fa fa-regular fa-heart" onclick="favorite()"></i>
+            </div>
+            </li>
+
+            <li>
+              <div class="recipebox" id="recipe">
+                <img class="recipeimage" src="images/pasta-four.jpg" width="350">
+                <h3>Another Pasta</h3>
+                <p>120 cal</p>
+                <i class="fa fa-regular fa-heart" onclick="favorite()"></i>
+            </div>
+            </li>
+
+          </ul>
+
+        <!-- Desserts -->
+        <h2 class="recipe-names">Desserts</h2>
+
+        <ul>
+
+          <li>
+            <div class="recipebox" id="recipe">
+              <img class="recipeimage" src="images/cake.jpg" width="350">
+              <h3>Cake</h3>
+              <p>255 cal</p>
+              <i class="fa fa-regular fa-heart" onclick="favorite()"></i>
+          </div>
+          </li>
+
+          <li>
+            <div class="recipebox" id="recipe">
+              <img class="recipeimage" src="images/macarons.jpg" width="350">
+              <h3>Macarons</h3>
+              <p>100 cal</p>
+              <i class="fa fa-regular fa-heart" onclick="favorite()"></i>
+          </div>
+          </li>
+
+          <li>
+            <div class="recipebox" id="recipe">
+              <img class="recipeimage" src="images/cupcake.jpg" width="350">
+              <h3>Cupcake</h3>
+              <p>305 cal</p>
+              <i class="fa fa-regular fa-heart" onclick="favorite()"></i>
+          </div>
+          </li>
+
+          <li>
+            <div class="recipebox" id="recipe">
+              <img class="recipeimage" src="images/ice-cream.jpg" width="350">
+              <h3>Ice cream</h3>
+              <p>200 cal</p>
+              <i class="fa fa-regular fa-heart" onclick="favorite()"></i>
+          </div>
+          </li>
+
+        </ul>
+
+        </div>
+    </main>
+    
+</body>

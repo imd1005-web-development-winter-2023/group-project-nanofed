@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Set the page title -->
+    <title>HungryBox</title>
+
+    <!-- Set the charset we're using to UTF-8 -->
+    <meta charset="UTF-8" />
+
+    <!-- Set the screens default zoom / scale to 1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- We are using a CSS Reset file to standardize browser default css -->
+    <link rel="stylesheet" href="./reset.css" />
+
+    <!-- This is where all of our awesome CSS code goes -->
+    <link rel="stylesheet" href="./sign.css" />
+
+    <!-- Set the Favicon  -->
+    <link rel="icon" href="./images/favicon/Hungrybox Logo (cropped).png" type="image/svg+xml" />
+</head>
+
+<body>
+    <!-- Sign Up Page -->
+    <section class="container forms">
+        <nav class="navigation">
+            <div class="nav-bar">
+                <h1><a href="./main.html">HungryBox</a></h1>
+                <img class="nav-bar" src="images/favicon/Hungrybox_Logo(2).png" width="120">
+            </div>
+            <div class="nav-links">
+                <a href="recipes.html" id="recipes">Recipes</a>
+                <a href="#">Kitchen Tips</a>
+                <a href="#">Community</a>
+                <a href="#">About us</a>
+                <a href="#">Contact us</a>
+            </div>
+
+        </nav>
+
+        <div class="form signUp">
+
+            <div class="sign-in-form">
+                <h1 class="sign-in-title">Welcome to HungryBox</h1>
+                <h3 class="sign-in-subtitle">Sign In to submit reviews and your own recipes!</h3>
+                <form>
+                    <div class="field input">
+                        <div class="field input-name">
+                            <input type="first name" class="sign-up-fn" placeholder="First Name">
+                            <input type="last name" class="sign-up-ln" placeholder="Last Name">
+                            <div class="error"></div>
+                        </div>
+                    </div>
+
+                    <div class="field input">
+                        <input type="email" class="sign-up-email" placeholder="Email">
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="field input">
+                        <input type="password" class="sign-up-password" placeholder="Password">
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="field input-btn-SignUp">
+                        <button type="submit" class="sign-up-btn">Sign up</button>
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="media">
+                        <a href="#" class="google-signup">
+                            <img src="images/favicon/google-icon.png" alt="google icon" width="18" class="google-icon">
+                            <span>Sign up with Google</span>
+                        </a>
+
+                        <a href="#" class="facebook-signup">
+                            <img src="images/favicon/facebook-icon.png" alt="facebook icon" width="18"
+                                class="facebook-icon">
+                            <span>Sign up with Facebook</span>
+                        </a>
+                    </div>
+
+                    <div class="form-link">
+                        <p class="no-account">Already have an account? <a href="./signin.html">Sign In</a></p>
+                        <p class="guest">Or continue as <a href="./main.html">guest</a></p>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+    <main>
+
+    </main>
+
+    <!-- This is where we add our awesome JavaScript code -->
+    <script src="./signup.js"></script>
+</body>
+
+</html>

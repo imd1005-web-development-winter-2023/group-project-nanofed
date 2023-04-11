@@ -1,37 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Set the page title -->
-    <title>Group Project</title>
 
-    <!-- Set the charset we're using to UTF-8 -->
-    <meta charset="UTF-8" />
+<head>
+  <!-- Set the page title -->
+  <title>HungryBox</title>
 
-    <!-- Set the screens default zoom / scale to 1 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Set the charset we're using to UTF-8 -->
+  <meta charset="UTF-8" />
 
-    <!-- We are using a CSS Reset file to standardize browser default css -->
-    <link rel="stylesheet" href="./reset.css" />
+  <!-- Set the screens default zoom / scale to 1 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- This is where all of our awesome CSS code goes -->
-    <link rel="stylesheet" href="./style.css" />
+  <!-- We are using a CSS Reset file to standardize browser default css -->
+  <link rel="stylesheet" href="./reset.css" />
 
-    <!-- Set the Favicon  -->
-    <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
-  </head>
-  <body>
-    <!--
+  <!-- This is where all of our awesome CSS code goes -->
+  <link rel="stylesheet" href="./style.css" />
 
-      ADD YOUR GROUP PROJECT CODE
+  <!-- Set the Favicon  -->
+  <link rel="icon" href="./images/favicon/Hungrybox_Logo(2).png" width="200   " />
 
-      YOU MAY REMOVE THE BOILERPLATE CODE BELOW
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    -->
-    <main>
-      <div id="app"></div>
-    </main>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- This is where we add our awesome JavaScript code -->
-    <script src="./main.js"></script>
-  </body>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500&family=Righteous&family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!--Header section--> 
+    <!--Images and all that-->
+  <div class="landing">
+    <section class="header">
+      <nav class="navigation">
+        <div class="header-container>">
+          <h1 class="nav-bar"><a href="main.html">HungryBox</a></h1>
+          <div class="nav-links">
+            <!-- Recipe button that leads to another page -->
+            <a href="recipes.html" id="recipes">Recipes</a>
+            <a href="#">Kitchen Tips</a>
+            <a href="#">Community</a>
+            <a href="#">About us</a>
+            <a href="#">Contact us</a>
+            <!--Sign in button that leads to another page-->
+            <a href="signin.html" id="sign-in">Sign in</a>
+          </div>
+        </div>
+      </nav>
+    </section>
+  </div>
+
+  <div class="intro-text">
+    <h1 id="intro-title" href="main.html">HungryBox</h1>
+  </div>
+  <div class="research">
+    <!--Search button-->
+    <form id="search">
+      <input type="text" id="searching" placeholder="pineapple pizza..." href="recipes.html">
+    </form>
+  </div>
+
+</body>
 </html>

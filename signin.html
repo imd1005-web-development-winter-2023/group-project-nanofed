@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Set the page title -->
+  <title>HungryBox</title>
+
+  <!-- Set the charset we're using to UTF-8 -->
+  <meta charset="UTF-8" />
+
+  <!-- Set the screens default zoom / scale to 1 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- We are using a CSS Reset file to standardize browser default css -->
+  <link rel="stylesheet" href="./reset.css" />
+
+  <!-- This is where all of our awesome CSS code goes -->
+  <link rel="stylesheet" href="./sign.css" />
+
+  <!-- Set the Favicon  -->
+  <link rel="icon" href="./images/favicon/Hungrybox Logo (cropped).png" type="image/svg+xml" />
+
+</head>
+
+<body>
+
+  <!-- Sign Up Page -->
+
+  <section class="container forms">
+    <nav class="navigation">
+      <div class="nav-bar">
+        <h1><a href="./main.html">HungryBox</a></h1>
+        <img class="nav-bar" src="images/favicon/Hungrybox_Logo(2).png" width="120">
+      </div>
+      <div class="nav-links">
+        <a href="recipes.html">Recipes</a>
+        <a href="#">Kitchen Tips</a>
+        <a href="#">Community</a>
+        <a href="#">About us</a>
+        <a href="#">Contact us</a>
+      </div>
+
+    </nav>
+
+    <div class="form signIn">
+
+      <div class="sign-in-form">
+        <h1 class="sign-in-title">Welcome to HungryBox</h1>
+        <h3 class="sign-in-subtitle">Sign In to submit reviews and your own recipes!</h3>
+        <form id="form" action="./signup.html">
+
+          <div class="field input">
+            <input type="email" id="email" class="sign-in-email" placeholder="Email" autocomplete="off">
+            <div class="error"></div>
+          </div>
+
+          <div class="field input">
+            <input type="password" id="password" class="sign-in-password" placeholder="Password" autocomplete="off">
+            <div class="error"></div>
+          </div>
+
+          <div class="forgot-password">
+            <a href="#">Forgot password?</a>
+          </div>
+
+          <div class="field input-btn-SignIn">
+            <button type="submit" class="sign-in-btn">Sign in <a href="./index.html"></a></button>
+          </div>
+        </form>
+
+
+        <div class="line"></div>
+
+        <div class="media">
+          <a href="#" class="google">
+            <img src="images/favicon/google-icon.png" alt="google icon" width="18" class="google-icon">
+            <span>Sign in with Google</span>
+          </a>
+
+          <a href="#" class="facebook">
+            <img src="images/favicon/facebook-icon.png" alt="facebook icon" width="18" class="facebook-icon">
+            <span>Sign in with Facebook</span>
+          </a>
+        </div>
+
+        <div class="form-link">
+          <p class="no-account">Don't have an account? <a href="./signup.html">Sign Up</a></p>
+          <p class="guest">Or continue as <a href="./main.html">guest</a></p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <div id="app"></div>
+  </main>
+
+  <!-- This is where we add our awesome JavaScript code -->
+  <script src="./signin.js"></script>
+</body>
+
+</html>

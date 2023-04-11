@@ -1,6 +1,28 @@
-/*sign up page */
+/*sign in and sign up page */
+
+
+/*Body*/
+.body {
+  display: block;
+}
+
+.body>* {
+  width: 100%;
+}
+
+@media screen and (min-width: 750px) {
+  .body {
+    display: flex;
+  }
+
+  .body>*+* {
+    margin-left: 2rem;
+  }
+
+}
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
   overflow: hidden;
 }
 
@@ -15,18 +37,33 @@ main {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   background-image: url("images/favicon/account-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+/* Sign in page */
+.form.signIn {
+  max-width: 600px;
+  max-height: 650px;
+  width: 100%;
+  padding: 40px;
+  border-radius: 15px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  background: white;
+  box-shadow: 1px 1px 5px #888888;
+}
+
+/* Navigation Bar */
 .navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  margin: -100px 30px 35px 30px;
+  margin: 10px 25px 20px 25px;
   flex-direction: row;
   color: #FFF;
 }
@@ -51,20 +88,7 @@ main {
   gap: 30px;
 }
 
-.form {
-  max-width: 600px;
-  max-height: 650px;
-  width: 100%;
-  padding: 30px;
-  margin-top: 50px;
-  border-radius: 15px;
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  background: white;
-  box-shadow: 1px 1px 5px #888888;
-}
-
+/*Sign In title, buttons */
 .sign-in-title {
   color: #707070;
 }
@@ -106,7 +130,7 @@ form .field {
   background-color: #F2F2F2;
   border-color: white;
   border-radius: 15px;
-  /*box-shadow: 1px 1px 5px #888888;*/
+  box-shadow: 1px 1px 5px #888888;
   position: relative;
 }
 
@@ -126,6 +150,7 @@ form .field {
   border-color: red;
 }
 
+/* Or and google/facebook icon */
 .line {
   position: relative;
   height: 1px;
@@ -171,6 +196,8 @@ form .field {
   margin-top: 10px;
   gap: 10px;
 }
+
+/* Form links */
 
 .form-link {
   text-align: center;
@@ -225,6 +252,20 @@ form .field {
 /*
   Sign Up Page
   */
+
+.form.signUp {
+  max-width: 600px;
+  max-height: 670px;
+  width: 100%;
+  padding: 30px;
+  margin-top: 50px;
+  border-radius: 15px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  background: white;
+  box-shadow: 1px 1px 5px #888888;
+}
 
 .sign-up-title {
   color: #707070;

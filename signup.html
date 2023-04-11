@@ -3,7 +3,7 @@
 
 <head>
     <!-- Set the page title -->
-    <title>Group Project</title>
+    <title>HungryBox</title>
 
     <!-- Set the charset we're using to UTF-8 -->
     <meta charset="UTF-8" />
@@ -18,14 +18,17 @@
     <link rel="stylesheet" href="./sign.css" />
 
     <!-- Set the Favicon  -->
-    <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
+    <link rel="icon" href="./images/favicon/Hungrybox Logo (cropped).png" type="image/svg+xml" />
 </head>
 
 <body>
     <!-- Sign Up Page -->
     <section class="container forms">
         <nav class="navigation">
-            <h1 class="nav-bar">TheHungryBox</h1>
+            <div class="nav-bar">
+                <h1><a href="./main.html">HungryBox</a></h1>
+                <img class="nav-bar" src="images/favicon/Hungrybox_Logo(2).png" width="120">
+            </div>
             <div class="nav-links">
                 <a href="recipes.html" id="recipes">Recipes</a>
                 <a href="#">Kitchen Tips</a>
@@ -36,29 +39,32 @@
 
         </nav>
 
-        <div class="form signIn">
+        <div class="form signUp">
 
             <div class="sign-in-form">
-                <h1 class="sign-in-title">Welcome to TheHungryBox</h1>
+                <h1 class="sign-in-title">Welcome to HungryBox</h1>
                 <h3 class="sign-in-subtitle">Sign In to submit reviews and your own recipes!</h3>
                 <form>
-                    <div class="field input-SignUp">
+                    <div class="field input">
                         <div class="field input-name">
                             <input type="first name" class="sign-up-fn" placeholder="First Name">
-                            <input type="last name" class="sign-up-ls" placeholder="Last Name">
+                            <input type="last name" class="sign-up-ln" placeholder="Last Name">
+                            <div class="error"></div>
                         </div>
                     </div>
 
-                    <div class="field input-SignUp">
+                    <div class="field input">
                         <input type="email" class="sign-up-email" placeholder="Email">
+                        <div class="error"></div>
                     </div>
 
-                    <div class="field input-SignUp">
+                    <div class="field input">
                         <input type="password" class="sign-up-password" placeholder="Password">
+                        <div class="error"></div>
                     </div>
 
                     <div class="field input-btn-SignUp">
-                        <button type="button" class="sign-up-btn">Sign up</button>
+                        <button type="submit" class="sign-up-btn">Sign up</button>
                     </div>
 
                     <div class="line"></div>
@@ -77,8 +83,8 @@
                     </div>
 
                     <div class="form-link">
-                        <p class="no-account">Already have an account? <a href="./index.html">Sign In</a></p>
-                        <p class="guest">Or continue as <a href="#">guest</a></p>
+                        <p class="no-account">Already have an account? <a href="./signin.html">Sign In</a></p>
+                        <p class="guest">Or continue as <a href="./main.html">guest</a></p>
                     </div>
 
                 </form>
@@ -90,7 +96,7 @@
     </main>
 
     <!-- This is where we add our awesome JavaScript code -->
-    <!--<script src="./main.js"></script>-->
+    <script src="./signup.js"></script>
 </body>
 
 </html>

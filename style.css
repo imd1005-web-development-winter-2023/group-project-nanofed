@@ -24,10 +24,13 @@
 
 @font-face {
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-family: 'DM Serif Display', serif;
 }
 
+
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
   overflow: hidden;
   background-image: url("front-images/betterheader.png");
   background-repeat: no-repeat;
@@ -42,8 +45,38 @@ body .intro-text {
   align-items: center;
   justify-content: center;
   font-size: 60px;
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-family: 'DM Serif Display', serif;
+  position: relative;
+  transition: 0.4s ease;
+
 }
+
+/* Animation test, does not work.)
+/*.intro-text:hover{
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(35, 27, 17, 0.638);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+  color: black;
+  border: none;
+}
+*/
+
+
+.intro-text:hover{
+  transform: scale(1.8);
+  -webkit-transform: scale(1.8);
+  -ms-transform: scale(1.8);
+  color: rgb(70, 209, 255);
+}
+
+
+
+
+
+
 
 .research {
   margin-top: 50px;
@@ -80,7 +113,7 @@ body .intro-text {
 .nav-bar {
   margin-left: 30px;
   margin-top: 20px;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .nav-bar a {
@@ -98,16 +131,32 @@ body .intro-text {
   margin-top: -20px;
 }
 
-.nav-links a {
+a {
   text-decoration: none;
   color: white;
   display: flex;
   justify-content: space-evenlys;
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  position: relative;
 }
 
-.nav-links a:hover {
-  text-decoration: underline;
+a:after{
+  text-decoration: none;
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s ease;
 }
+
+.nav-links a:hover:after {
+  width: 100%;
+  color: antiquewhite;
+}
+
+
 
 /* Start of the intro sequence */

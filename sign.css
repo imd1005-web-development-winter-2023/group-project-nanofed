@@ -83,13 +83,14 @@ form .field {
   height: 100%;
   width: 100%;
   border: none;
-  border-color: #F2F2F2;
+  background-color: #516949;
+  color: white;
   box-shadow: 1px 1px 5px #888888;
 }
 
 .field button:hover {
-  background-color: #516949;
-  color: white;
+
+  border-color: #F2F2F2;
   box-shadow: 1px 1px 5px #888888;
 }
 
@@ -103,21 +104,25 @@ form .field {
   width: 100%;
   padding: 25px;
   background-color: #F2F2F2;
+  border-color: white;
   border-radius: 15px;
-  border: none;
-  box-shadow: 1px 1px 5px #888888;
+  /*box-shadow: 1px 1px 5px #888888;*/
   position: relative;
 }
 
-.field input.success input {
+.field.input input:focus {
+  outline: 0;
+}
+
+.field.input.success input {
   border-color: green;
 }
 
-.field input.error input {
+.field.input.error input {
   border-color: red;
 }
 
-.field input .error {
+.field.input .error .message {
   border-color: red;
 }
 

@@ -85,6 +85,10 @@ body .intro-text{
   font-size: 25px;
 }
 
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+}
 .nav-links{
   text-decoration: none;
   display: flex;
@@ -105,10 +109,5 @@ body .intro-text{
 .nav-links a:hover {
   text-decoration: underline;
 }
-
-
-
-
-
 
 /* Start of the intro sequence */

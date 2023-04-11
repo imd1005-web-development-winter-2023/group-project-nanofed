@@ -31,7 +31,11 @@
     margin-right: auto;
   }
 
-  * {
+  /*
+  PAGE / BODY
+*/
+
+  body {
     font-family: Arial, Helvetica, sans-serif;
   }
 
@@ -155,23 +159,68 @@
 
 /* Member Sign Up Section */
 
-.member--container {
-    max-width: 100%;
-    height: 800px;
-    margin: 0 auto;
-    display: flex;
+.member {
+  background-image: url(images/Ingredients.jpg);
 }
 
-.member--container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.member--flex {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  justify-content: right;
+  align-items: center;
 }
 
-.member--container .signup {
-    position: relative;
-    overflow: hidden;
+.member--flex--content {
+  width: 35%;
+  margin-top: 10rem;
+  margin-bottom: 13rem;
 }
+
+.member--flex--content h2 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  color: white;
+  text-align: right;
+}
+
+.member--flex--content--bubble {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 2rem;
+}
+
+.member--flex--content h3 {
+  font-size: 3rem;
+  line-height: 1.5;
+  text-align: right;
+  margin-bottom: 2rem;
+}
+.member--flex--content p {
+  font-size: 2rem;
+  line-height: 1.5;
+  text-align: right;
+  margin-bottom: 4rem;
+}
+
+.button {
+  margin-left: 16rem;
+  justify-content: right;
+  align-items: center;
+  background-color: #ffffff00;
+  border-radius: 25px;
+  border: 1px solid #2c2c2c;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  color: #2c2c2c;
+  font-size: 2rem;
+  }
+
+  .button:hover {
+   color: #ffffff;
+   border: 1px solid #2c2c2c;
+   background-color: #2c2c2c;
+  }
 
   /* Footer Section */
 
@@ -203,3 +252,8 @@
     margin-left: auto;
     margin-right: auto;
     }
+
+.underline:hover {
+  cursor: pointer;
+  color: gray;
+}

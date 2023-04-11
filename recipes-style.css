@@ -8,11 +8,10 @@ body {
   }
 
 /* Header */
-.nav-bar{
-    margin-left: 30px;
-    margin-top: 20px;
-    font-size: 25px;
-  }
+.nav-bar {
+  display: flex;
+  font-size: 30px;
+}
   
   .nav-links{
     text-decoration: none;

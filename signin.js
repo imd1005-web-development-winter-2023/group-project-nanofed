@@ -54,7 +54,7 @@ const validate = () => {
     if (passwordVal === '') {
         showError(password, 'Password is required')
     }
-    else if (password.length <= 7) {
+    else if (passwordVal.length <= 7) {
         showError(password, 'Password must be min 8 characters')
     }
     else {
